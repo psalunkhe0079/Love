@@ -1,5 +1,5 @@
-// Typewriter Effect
-const text = "Today is all about celebrating you and the joy you bring to my life ❤️";
+// Typewriter
+const text = "From the moment you came into my life, everything became more beautiful ❤️";
 let i = 0;
 
 function typeWriter() {
@@ -12,24 +12,26 @@ function typeWriter() {
 
 window.onload = typeWriter;
 
-// Start Celebration
-function startCelebration() {
+// Start Love Flow
+function startLove() {
     document.getElementById("intro").classList.add("hidden");
     document.getElementById("gallery").classList.remove("hidden");
-
-    // Play Music (Autoplay works after user click)
     document.getElementById("bgMusic").play();
-
-    startConfetti();
 }
 
-// Show Final Message
-function showMessage() {
+// Show Proposal
+function showProposal() {
     document.getElementById("gallery").classList.add("hidden");
-    document.getElementById("message").classList.remove("hidden");
+    document.getElementById("proposal").classList.remove("hidden");
 }
 
-// Simple Confetti Animation
+// Confetti on YES
+function celebrate() {
+    startConfetti();
+    alert("Yayyyy! I love you ❤️");
+}
+
+// Confetti
 function startConfetti() {
     const canvas = document.getElementById("confetti");
     const ctx = canvas.getContext("2d");
@@ -39,19 +41,18 @@ function startConfetti() {
 
     let pieces = [];
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 120; i++) {
         pieces.push({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
-            size: Math.random() * 5 + 2,
+            size: Math.random() * 6 + 2,
             speed: Math.random() * 3 + 2
         });
     }
 
     function update() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "pink";
 
         pieces.forEach(p => {
             ctx.fillRect(p.x, p.y, p.size, p.size);
