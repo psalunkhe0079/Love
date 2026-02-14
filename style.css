@@ -2,7 +2,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     text-align: center;
-    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    background: linear-gradient(to right, #3a0f1c, #8b0000);
+    color: white;
     overflow-x: hidden;
 }
 
@@ -16,14 +17,14 @@ body {
 
 h1 {
     font-size: 40px;
-    color: #8b005d;
+    color: #ff4d6d;
 }
 
 button {
     padding: 12px 25px;
     border: none;
     border-radius: 25px;
-    background: #ff4d6d;
+    background: #ff1e56;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -32,7 +33,7 @@ button {
 }
 
 button:hover {
-    background: #d6336c;
+    background: #ff4d6d;
 }
 
 .grid {
@@ -48,28 +49,18 @@ button:hover {
 }
 
 .card {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.1);
     padding: 30px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    color: white;
     max-width: 600px;
     margin: auto;
-}
-
-.highlight {
-    color: yellow;
-    font-weight: bold;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    h1 {
-        font-size: 28px;
     }
 }
 
@@ -79,7 +70,6 @@ button:hover {
     }
 }
 
-/* Confetti canvas */
 #confetti {
     position: fixed;
     top: 0;
