@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<!-- Intro Section -->
+<div id="intro" class="section">
+    <h1>Happy Birthday, Baby 💕</h1>
+    <p id="typeText"></p>
+    <button onclick="startCelebration()">Start the Celebration 🎉</button>
+</div>
+
+<!-- Gallery Section -->
+<div id="gallery" class="section hidden">
+    <h2>Our Beautiful Memories ❤️</h2>
+
+    <div class="grid">
+        <img src="img1.jpg">
+        <img src="img2.jpg">
+        <img src="img3.jpg">
+        <img src="img4.jpg">
+        <img src="img5.jpg">
+        <img src="img6.jpg">
+    </div>
+
+    <button onclick="showMessage()">Final Surprise 💌</button>
+</div>
+
+<!-- Final Message Section -->
+<div id="message" class="section hidden">
+    <div class="card">
+        <h2>A Special Message for You 💖</h2>
+        <p>
+            You make my world brighter just by being in it.
+            Every moment with you feels magical.
+        </p>
+        <p class="highlight">
+            Happy Birthday, my love. Here’s to forever together. 💕
+        </p>
+    </div>
+</div>
+
+<!-- Confetti Canvas -->
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
