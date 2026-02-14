@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Happy Birthday ❤️</title>
+    <title>Be My Valentine ❤️</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Background Music -->
 <audio id="bgMusic" src="music.mp3" loop></audio>
 
-<!-- Intro Section -->
+<!-- Intro -->
 <div id="intro" class="section">
-    <h1>Happy Birthday, Baby 💕</h1>
+    <h1>Happy Valentine's Day ❤️</h1>
     <p id="typeText"></p>
-    <button onclick="startCelebration()">Start the Celebration 🎉</button>
+    <button onclick="startLove()">Open My Heart 💌</button>
 </div>
 
-<!-- Gallery Section -->
+<!-- Gallery -->
 <div id="gallery" class="section hidden">
-    <h2>Our Beautiful Memories ❤️</h2>
+    <h2>Our Love Story 🌹</h2>
 
     <div class="grid">
         <img src="img1.jpg">
@@ -30,24 +29,22 @@
         <img src="img6.jpg">
     </div>
 
-    <button onclick="showMessage()">Final Surprise 💌</button>
+    <button onclick="showProposal()">One Last Thing ❤️</button>
 </div>
 
-<!-- Final Message Section -->
-<div id="message" class="section hidden">
+<!-- Proposal -->
+<div id="proposal" class="section hidden">
     <div class="card">
-        <h2>A Special Message for You 💖</h2>
+        <h2>Will You Be My Valentine? 💍❤️</h2>
         <p>
-            You make my world brighter just by being in it.
-            Every moment with you feels magical.
+            Every day with you feels magical.
+            I don’t need a special day to love you,
+            but today I want to say it louder.
         </p>
-        <p class="highlight">
-            Happy Birthday, my love. Here’s to forever together. 💕
-        </p>
+        <button onclick="celebrate()">YES 💖</button>
     </div>
 </div>
 
-<!-- Confetti Canvas -->
 <canvas id="confetti"></canvas>
 
 <script src="script.js"></script>
